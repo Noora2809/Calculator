@@ -1,0 +1,101 @@
+body{
+    background: rgb(31, 31, 34);
+    background: linear-gradient(90deg, rgb(48, 48, 53) 0%, rgba(135, 136, 136, 0.947) 35%, rgb(44, 62, 65) 100%);
+}
+
+.calculator-box {
+    width: 100%;
+    height: 400px;
+    max-width: 300px; /* Set your preferred max-width for a square box */
+    margin: 0 auto; /* Center the calculator box */
+    background-color: rgb(62, 59, 59);
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-color: black;
+    border-radius: 30%;
+    cursor: pointer;
+    border:1px solid #090909;
+    background:linear-gradient(145deg,#111111,#353335);
+    box-shadow: inset 1px 1px 3px #636363,
+    inset -2px -2px 3px #141414;
+    color: wheat;
+    transition: all 0.1s ease-in;
+}
+.operatorbtn{
+    border:1px solid #090909;
+    background:linear-gradient(145deg,#000000,#242424);
+    box-shadow: inset 1px 1px 3px #616161,
+    inset -2px -2px 3px #000000;
+    color: wheat;
+}
+.operatorbtn:active{
+    border:2px solid #090909;
+    background:linear-gradient(145deg,#000000,#242424c4);
+    box-shadow: inset 1px 1px 3px #3d3d3d,
+    inset -2px -2px 3px #000000;
+    transform: scale(1);
+    color: whitesmoke;
+}
+.equalBtn{
+    border:1px solid #090909;
+    background:linear-gradient(145deg,rgb(121, 48, 0),rgb(252, 137, 43));
+    box-shadow: inset 1px 1px 3px #faa249,
+    inset -2px -2px 3px #643301;
+    color: wheat;
+}
+.equalBtn:active{
+    border:2px solid #090909;
+    background:linear-gradient(145deg,rgb(122, 49, 0),rgb(255, 133, 32));
+    box-shadow: inset 1px 1px 3px #ff8c18,
+    inset -2px -2px 3px #4b2500;
+    transform: scale(1);
+    color: whitesmoke;
+}
+
+.allClearBtn{
+    border:1px solid #090909;
+    background:linear-gradient(145deg,#5e0000,rgb(255, 35, 35));
+    box-shadow: inset 1px 1px 3px #ff5454,
+    inset -2px -2px 3px #2e0000;
+    color: wheat;
+}
+.allClearBtn:active{
+    border:2px solid #090909;
+    background:linear-gradient(145deg,#530000,rgb(255, 22, 22));
+    box-shadow: inset 1px 1px 3px #ff2323,
+    inset -2px -2px 3px #1b0000;
+    transform: scale(1);
+    color: whitesmoke;
+}
+
+.singleClearBtn{
+    border:1px solid #090909;
+    background:linear-gradient(145deg,#0a3300,rgb(61, 255, 93));
+    box-shadow: inset 1px 1px 3px #70ff4f,
+    inset -2px -2px 3px #062200;
+    color: wheat;
+    font-size: 16px;
+    
+}
+.singleClearBtn:active{
+    border:2px solid #090909;
+    background:linear-gradient(145deg,#092c00,rgb(39, 255, 75));
+    box-shadow: inset 1px 1px 3px #50ff28,
+    inset -2px -2px 3px #051d00;
+    transform: scale(1);
+    color: whitesmoke;
+}
+
+/* display: grid;: This property is used to define an element as a grid container, establishing a new grid formatting context for its contents. In this case, .button-container will act as a grid container.
+
+grid-template-columns: repeat(4, 1fr);: This property defines the number and size of columns in the grid. Here, it specifies that there should be four columns, and each column should take up an equal portion of the available space. The 1fr unit (fractional unit) means that each column will have an equal share of the available space.
+
+gap: 8px;: This property sets the gap (space) between the columns and rows of the grid. In this case, there will be an 8-pixel gap between each column. */
